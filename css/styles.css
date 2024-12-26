@@ -69,6 +69,24 @@ body {
 }
 
 
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce el tamaño de fuente para mayor legibilidad */
+        line-height: 1.5; /* Ajusta el espaciado entre líneas */
+    }
+
+    .header h1 {
+        font-size: 1.8rem; /* Ajusta el tamaño del título */
+    }
+
+    .header p {
+        font-size: 1rem; /* Reduce el tamaño del párrafo */
+    }
+
+    .cta-button {
+        padding: 0.6rem 1rem; /* Ajusta el tamaño del botón */
+    }
+}
 
 
 
