@@ -30,7 +30,7 @@ body {
 
 /* Estilo para los logos individuales */
 .header-logo {
-    max-width: 150px; /* Limita el tamaño máximo de las imágenes */
+    max-width: 155px; /* Limita el tamaño máximo de las imágenes */
     height: auto; /* Mantiene las proporciones */
 }
 
@@ -113,7 +113,7 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    color: #333;
+    color: #0b0b0b;
     font-weight: 600;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -167,7 +167,7 @@ body {
 }
 
 .about-section p {
-    color: #333333; /* Color del texto */
+    color: #080808; /* Color del texto */
     text-align: justify; /* Alinea el texto por ambos lados */
     font-size: 1rem;
     line-height: 1.8; /* Aumenta el espacio entre líneas para mejor legibilidad */
@@ -197,7 +197,7 @@ body {
 }
 
 .about-section ul li strong {
-    color: #141414;
+    color: #2C3E50;
 }
 
 /* Enlaces */
@@ -283,23 +283,25 @@ body {
 /*------------------------- Encabezado secundario para la sección */
 /* ------------------------------------ Experiencia Laboral ------------------------------------ */
 /* Estilo general para la sección de experiencia laboral */
+
+
 #experiencia-laboral h2 {
     font-size: 2rem; /* Tamaño del texto */
-    color: #f6f7f9; /* Color del texto */
+    color: #0a0a0a; /* Color del texto */
     text-align: center; /* Centra el texto */
     margin: 40px auto 20px auto; /* Margen superior aumentado y centrado horizontal */
-    background: linear-gradient(135deg, #ffffff, #415f76); /* Fondo decorativo */
+    /*background: linear-gradient(135deg, #ffffff, #415f76); /* Fondo decorativo */
     padding: 20px 10px; /* Espaciado interno */
     border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     width: 80%; /* Ancho limitado */
 }
 
 
 
 #experiencia-laboral h2 {
-    font-size: 2rem;
-    color: #fcf8f8;
+    font-size: 1.5rem;
+    color: #5b5454;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -355,3 +357,7 @@ body {
 
 
 /*------------------------- Encabezado secundario para la sección */
+
+
+/*------------------------- portafolio */
+
