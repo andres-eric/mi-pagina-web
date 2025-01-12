@@ -63,7 +63,7 @@
                     <li><strong>Pais:</strong> Colombia</li>
                     <li><strong>Sexo:</strong> Masculino</li>
                     <li><strong>Email:</strong> <a href="mailto:andres.4589@hotmail.es">andres.4589@hotmail.es</a></li>
-                    <li><strong>GitHub:</strong> <a href="https://github.com/Andres-Fonseca/data_prediction_Reparaciones" target="_blank">Andres-Fonseca/data_prediction_Reparaciones</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/andres-eric" target="_blank">https://github.com/andres-eric</a></li>
                 </ul>
             </div>
             
@@ -194,7 +194,7 @@
                             semanales para el Grupo Nutresa, 
                             se realizó un análisis exhaustivo de los datos históricos de ventas utilizando Power BI. 
                             Este análisis tuvo como objetivo principal explorar y comprender las tendencias 
-                            y patrones de compra de los clientes.</li>
+                            y patrones de compra.</li>
                     </ul>
                 </li>
             </ul>
@@ -209,7 +209,7 @@
                 title="estibas" 
                 width="100%" 
                 height="600px" 
-                src="https://app.fabric.microsoft.com/view?r=eyJrIjoiYjBjZTc3M2QtMjk4NS00Y2RkLTg4ZGQtZjc0NjkyODQ2Yzk3IiwidCI6Ijk5ZTFlNzIxLTcxODQtNDk4ZS04YWZmLWIyYWQ0ZTUzYzFjMiIsImMiOjR9" 
+                src="https://app.fabric.microsoft.com/view?r=eyJrIjoiY2M1N2JiYTAtYWE1YS00Zjk4LWI4OTItNzUyZmIyMmM3YWQzIiwidCI6Ijk5ZTFlNzIxLTcxODQtNDk4ZS04YWZmLWIyYWQ0ZTUzYzFjMiIsImMiOjR9" 
                 frameborder="0" 
                 allowFullScreen="true">
             </iframe>
@@ -221,13 +221,33 @@
 
     <section id="contacto" class="contact-section">
         <h2>Contacto</h2>
-        <form>
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu correo electrónico" required>
-            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+        <form
+          action="https://formspree.io/f/mdkkyqzr"
+          method="POST"
+          id="contact-form"
+        >
+            <div class="form-group">
+                <label for="email">Tu correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Tu mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" rows="5" required></textarea>
+            </div>
             <button type="submit">Enviar</button>
         </form>
     </section>
+    
+    
+    
+    <!-- Scripts necesarios -->
+    <script src="script.js"></script>
+
+    
+    
+    
+    
+    
 
     <footer class="footer">
         <p>© 2024 Analista de Datos - Todos los derechos reservados.</p>
