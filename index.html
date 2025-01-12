@@ -243,14 +243,20 @@
     <!-- Scripts necesarios -->
     <script src="script.js"></script>
 
-    
-    
-    
-    
-    
 
     <footer class="footer">
-        <p>© 2024 Analista de Datos - Todos los derechos reservados.</p>
+        <p id="footer-text">© <span id="current-year"></span> Analista de Datos - Todos los derechos reservados.</p>
     </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const yearElement = document.getElementById("current-year");
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+
+    
 </body>
 </html>
