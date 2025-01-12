@@ -1,183 +1,196 @@
 /* ------------------------------------ General ------------------------------------ */
-
+/* Estilo general para el cuerpo de la página */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #2d89ef, #41b883);
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif; /* Fuente principal del texto */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina padding predeterminado */
+    background: linear-gradient(135deg, #2d89ef, #41b883); /* Fondo degradado diagonal */
+    color: #333; /* Color principal del texto */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
 }
 
 /* -----------------------Header-------------------------------------------------------- */
+/* Estilo general del encabezado */
 .header {
-    background: linear-gradient(135deg, #ffffff, #415f76);
-    color: #f9f0f0;
-    padding: 2rem 0;
-    position: relative; /* Necesario para posicionar la imagen */
-    text-align: center; /* Centra el texto y botón */
+    background: linear-gradient(135deg, #ffffff, #415f76); /* Fondo degradado para el encabezado */
+    color: #f9f0f0; /* Color del texto del encabezado */
+    padding: 2rem 0; /* Espaciado interno superior e inferior */
+    position: relative; /* Permite posicionar elementos hijos con `absolute` */
+    text-align: center; /* Centra el contenido del encabezado */
 }
 
-/* Contenedor para los logos */
+/* Contenedor para los logos dentro del encabezado */
 .header-logos {
-    position: absolute;
-    top: 50%; /* Centra verticalmente los logos */
-    left: 1rem; /* Ajusta la separación del borde izquierdo */
-    transform: translateY(-50%); /* Corrige el alineado vertical */
+    position: absolute; /* Posiciona los logos de forma absoluta */
+    top: 50%; /* Centra los logos verticalmente */
+    left: 1rem; /* Define la separación desde el borde izquierdo */
+    transform: translateY(-50%); /* Ajusta el centrado vertical exacto */
     display: flex; /* Coloca los logos en fila horizontal */
-    gap: 1rem; /* Añade espacio entre los logos */
+    gap: 1rem; /* Añade un espacio uniforme entre los logos */
 }
 
-/* Estilo para los logos individuales */
+/* Estilo individual para los logos */
 .header-logo {
-    max-width: 155px; /* Limita el tamaño máximo de las imágenes */
-    height: auto; /* Mantiene las proporciones */
+    max-width: 155px; /* Define el tamaño máximo de los logos */
+    height: auto; /* Mantiene las proporciones originales de las imágenes */
 }
 
-/* Contenido del encabezado */
+/* Contenedor para el contenido textual del encabezado */
 .header-content {
-    max-width: 800px;
-    margin: 0 auto; /* Centra el contenido en la página */
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra horizontalmente el contenido dentro de la página */
 }
 
-/* Estilo para el título */
+/* Estilo para el título principal del encabezado */
 .header h1 {
-    font-size: 2.5rem; /* Ajusta el tamaño del texto */
-    margin-bottom: 0.5rem;
+    font-size: 2.5rem; /* Define el tamaño del texto del título */
+    margin-bottom: 0.5rem; /* Espaciado inferior para separar el título */
 }
 
-/* Estilo para el párrafo */
+/* Estilo para el párrafo dentro del encabezado */
 .header p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.2rem; /* Define el tamaño del texto del párrafo */
+    margin-bottom: 1.5rem; /* Espaciado inferior del párrafo */
 }
 
-/* Botón de llamada a la acción */
+/* Estilo para el botón de llamada a la acción */
 .cta-button {
-    background: #ff5722;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s ease;
+    background: #ff5722; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 0.8rem 1.5rem; /* Espaciado interno del botón */
+    border-radius: 25px; /* Bordes redondeados del botón */
+    text-decoration: none; /* Elimina el subrayado del texto del botón */
+    font-weight: 600; /* Negrita para el texto del botón */
+    transition: background 0.3s ease; /* Transición suave para el cambio de color de fondo */
 }
 
 /* Efecto hover para el botón */
 .cta-button:hover {
-    background: #e64a19;
+    background: #e64a19; /* Cambia el color de fondo al pasar el ratón */
 }
 
 
+
+
+
+
+
+
+/* ------------------------------------ Responsivo (Header) ------------------------------------ */
+/* Estilos específicos para pantallas con un ancho máximo de 768px */
 @media screen and (max-width: 768px) {
     body {
-        font-size: 14px; /* Reduce el tamaño de fuente para mayor legibilidad */
-        line-height: 1.5; /* Ajusta el espaciado entre líneas */
+        font-size: 14px; /* Reduce el tamaño de la fuente para adaptarse a pantallas pequeñas */
+        line-height: 1.5; /* Ajusta el espaciado entre líneas para mejor legibilidad */
     }
 
     .header h1 {
-        font-size: 1.8rem; /* Ajusta el tamaño del título */
+        font-size: 1.8rem; /* Reduce el tamaño del título principal en pantallas pequeñas */
     }
 
     .header p {
-        font-size: 1rem; /* Reduce el tamaño del párrafo */
+        font-size: 1rem; /* Reduce el tamaño del texto del párrafo */
     }
 
     .cta-button {
-        padding: 0.6rem 1rem; /* Ajusta el tamaño del botón */
+        padding: 0.6rem 1rem; /* Reduce el tamaño del botón para pantallas más pequeñas */
     }
 }
 
-
-
-/*----------------------- Navbar *-----------------------------*/
+/* ----------------------- Navbar --------------------------------------------------- */
+/* Estilo general de la barra de navegación */
 .navbar {
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background: #fff; /* Fondo blanco para la barra de navegación */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil debajo de la barra */
+    position: sticky; /* Fija la barra en la parte superior al hacer scroll */
+    top: 0; /* Ubica la barra en la parte superior de la pantalla */
+    z-index: 1000; /* Prioridad alta para que la barra esté encima de otros elementos */
 }
 
+/* Lista de navegación dentro de la barra */
 .navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5rem 0;
+    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    display: flex; /* Coloca los elementos de la lista en una fila horizontal */
+    justify-content: center; /* Centra los elementos dentro de la barra */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0.5rem 0; /* Añade espaciado interno superior e inferior */
 }
 
+/* Elementos individuales de la lista */
 .navbar ul li {
-    margin: 0 1rem;
+    margin: 0 1rem; /* Añade espacio horizontal entre los elementos */
 }
 
+/* Enlaces dentro de la barra de navegación */
 .navbar ul li a {
-    text-decoration: none;
-    color: #0b0b0b;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #0b0b0b; /* Color oscuro para el texto de los enlaces */
+    font-weight: 600; /* Negrita para el texto */
+    padding: 0.5rem 1rem; /* Espaciado interno para los enlaces */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+    transition: background 0.3s ease; /* Transición suave para el cambio de color de fondo */
 }
 
+/* Efecto hover para los enlaces */
 .navbar ul li a:hover {
-    background: #323842;
-    color: #fff;
+    background: #323842; /* Cambia el color de fondo al pasar el ratón */
+    color: #fff; /* Cambia el color del texto al pasar el ratón */
 }
+
+
+
+
 
 /* ------------------------------------ About Section ------------------------------------ */
-/* Sección About */
-
-
-
-
-
+/* Estilo general para la sección "About" */
 .about-section {
-    background: none;
-    padding: 3rem 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 1000px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif; /* Cambia a la misma fuente que experiencia laboral */
+    background: none; /* No se aplica fondo para la sección */
+    padding: 3rem 2rem; /* Espaciado interno (arriba/abajo y laterales) */
+    border-radius: 15px; /* Bordes redondeados de la sección */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la sección */
+    max-width: 1000px; /* Ancho máximo para limitar la sección */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    font-family: Arial, sans-serif; /* Cambia temporalmente la fuente a Arial */
 }
 
+/* Estilo general alternativo para la sección "About" (duplicado) */
 .about-section {
-    background: none;
-    padding: 3rem 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 1000px;
-    margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
+    background: none; /* No se aplica fondo para la sección */
+    padding: 3rem 2rem; /* Espaciado interno (arriba/abajo y laterales) */
+    border-radius: 15px; /* Bordes redondeados de la sección */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la sección */
+    max-width: 1000px; /* Ancho máximo para limitar la sección */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    font-family: 'Poppins', sans-serif; /* Cambia la fuente a Poppins */
 }
 
-/* Títulos en About */
+/* Títulos dentro de la sección "About" */
 .about-section h2, .about-section h3 {
-    color: #1E375B;
-    margin-bottom: 1.5rem;
-    text-align: center;
+    color: #1E375B; /* Color del texto de los títulos */
+    margin-bottom: 1.5rem; /* Espaciado inferior para separar de los elementos siguientes */
+    text-align: center; /* Centra los títulos horizontalmente */
 }
 
+/* Estilo para los subtítulos "h3" */
 .about-section h3 {
-    font-size: 1.8rem;
-    border-bottom: 2px solid #5E738F;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem; /* Tamaño del texto del subtítulo */
+    border-bottom: 2px solid #5E738F; /* Línea inferior decorativa */
+    padding-bottom: 0.5rem; /* Espaciado interno inferior para el subtítulo */
+    margin-bottom: 1rem; /* Espaciado adicional inferior */
 }
 
+/* Estilo para los párrafos dentro de la sección "About" */
 .about-section p {
-    color: #080808; /* Color del texto */
+    color: #080808; /* Color oscuro para el texto */
     text-align: justify; /* Alinea el texto por ambos lados */
-    font-size: 1rem;
-    line-height: 1.8; /* Aumenta el espacio entre líneas para mejor legibilidad */
-    background: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
-
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    padding: 4rem; /* Espaciado interno uniforme */
-    border-radius: 10px; /* Bordes redondeados */
-    margin: 0 auto 4rem auto; /* Agrega espacio superior e inferior y centra horizontalmente */
-    width: 80%; /* Define el ancho máximo */
+    font-size: 1rem; /* Tamaño del texto */
+    line-height: 1.8; /* Espaciado entre líneas para mejorar la legibilidad */
+    background: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad del 70% */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del párrafo */
+    padding: 4rem; /* Espaciado interno uniforme en los párrafos */
+    border-radius: 10px; /* Bordes redondeados en los párrafos */
+    margin: 0 auto 4rem auto; /* Centra horizontalmente y añade espaciado inferior */
+    width: 80%; /* Define el ancho máximo relativo al contenedor */
     max-width: 900px; /* Evita que el texto sea demasiado ancho en pantallas grandes */
 }
 
@@ -185,67 +198,79 @@ body {
 
 
 
+
+
+/* ------------------------------------ About Section ------------------------------------ */
+/* Estilo para listas dentro de la sección "About" */
 .about-section ul {
-    list-style: none;
-    padding: 0 20px;
-    margin: 1rem 0;
+    list-style: none; /* Elimina los marcadores predeterminados de la lista */
+    padding: 0 20px; /* Espaciado interno lateral */
+    margin: 1rem 0; /* Espaciado superior e inferior */
 }
 
+/* Estilo para los elementos individuales de las listas */
 .about-section ul li {
-    margin-bottom: 0.5rem;
-    text-align: left;
+    margin-bottom: 0.5rem; /* Espaciado inferior entre elementos */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
 
+/* Estilo para los textos destacados dentro de las listas */
 .about-section ul li strong {
-    color: #2C3E50;
+    color: #2C3E50; /* Aplica un color más oscuro para destacar el texto */
 }
 
-/* Enlaces */
+/* Estilo para enlaces dentro de la sección "About" */
 .about-section a {
-    color: #2575fc;
-    text-decoration: none;
+    color: #2575fc; /* Color azul brillante para los enlaces */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
 }
 
+/* Ajustes generales de fuente y tamaño para la sección "About" */
 .about-section {
-    font-family: Arial, sans-serif; /* Uniforma la fuente */
+    font-family: Arial, sans-serif; /* Uniforma la fuente a Arial */
     font-size: 0.9rem; /* Reduce el tamaño general del texto */
 }
 
+/* Ajustes de tamaño para los títulos dentro de la sección "About" */
 .about-section h2, .about-section h3 {
-    font-size: 1.5rem; /* Ajusta el tamaño de los títulos */
+    font-size: 1.5rem; /* Define un tamaño uniforme para los títulos */
 }
 
+/* Ajustes de tamaño para los párrafos dentro de la sección "About" */
 .about-section p {
-    font-size: 1 rem; /* Asegura que los párrafos también tengan tamaño reducido */
+    font-size: 1rem; /* Asegura que los párrafos tengan un tamaño adecuado */
 }
 
-
-/* ------------------------------------ Cards ------------------------------------ */
+/* ------------------------------------ Cards Section ------------------------------------ */
+/* Contenedor principal para las tarjetas */
 .datos-container {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex; /* Establece un diseño en fila para las tarjetas */
+    gap: 2rem; /* Espaciado uniforme entre las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas pasen a una nueva fila si no caben */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
 }
 
+/* Estilo individual para las tarjetas */
 .datos-card {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    width: 350px;
-    text-align: left;
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para las tarjetas */
+    padding: 1.5rem; /* Espaciado interno uniforme */
+    width: 350px; /* Ancho fijo para cada tarjeta */
+    text-align: left; /* Alinea el contenido de las tarjetas a la izquierda */
 }
 
+/* Listas dentro de las tarjetas */
 .datos-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style: none; /* Elimina los marcadores predeterminados de las listas */
+    padding: 0; /* Elimina el espaciado interno */
+    margin: 0; /* Elimina el margen externo */
 }
 
+/* Elementos individuales dentro de las listas en las tarjetas */
 .datos-card ul li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
+    margin-bottom: 0.5rem; /* Espaciado inferior entre los elementos */
+    font-size: 1rem; /* Tamaño uniforme para el texto dentro de las listas */
 }
 
 
@@ -254,25 +279,33 @@ body {
 
 
 /* ------------------------------------ Responsivo ------------------------------------ */
+/* Estilos específicos para pantallas con un ancho máximo de 768px */
 @media screen and (max-width: 768px) {
     .datos-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Cambia el diseño de las tarjetas a una columna */
+        align-items: center; /* Centra las tarjetas dentro del contenedor */
     }
     .datos-card {
-        width: 100%;
+        width: 100%; /* Las tarjetas ocupan todo el ancho del contenedor */
     }
 }
 
-
+/* ------------------------------------ Fondo de la página ------------------------------------ */
+/* Estilo para el fondo del cuerpo de la página */
 body {
-    background-image: url('https://i.imgur.com/wCzP0NH.jpeg'); /* Ruta de tu imagen */
-    background-size: cover; /* Escala la imagen para cubrir toda el área */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* No repite la imagen */
-    background-attachment: fixed; /* La imagen permanece fija al hacer scroll */
-  }
-  
+    background-image: url('https://i.imgur.com/wCzP0NH.jpeg'); /* Imagen de fondo */
+    background-size: cover; /* Escala la imagen para cubrir todo el área visible */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen para que no se mueva al hacer scroll */
+}
+
+
+
+
+
+
+
 
 
 
@@ -284,75 +317,81 @@ body {
 /* ------------------------------------ Experiencia Laboral ------------------------------------ */
 /* Estilo general para la sección de experiencia laboral */
 
-
+/* ------------------------------------ Experiencia Laboral ------------------------------------ */
+/* Estilo general para el título de la sección de experiencia laboral */
 #experiencia-laboral h2 {
-    font-size: 2rem; /* Tamaño del texto */
-    color: #0a0a0a; /* Color del texto */
-    text-align: center; /* Centra el texto */
-    margin: 40px auto 20px auto; /* Margen superior aumentado y centrado horizontal */
-    /*background: linear-gradient(135deg, #ffffff, #415f76); /* Fondo decorativo */
-    padding: 20px 10px; /* Espaciado interno */
-    border-radius: 15px; /* Bordes redondeados */
-    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    width: 80%; /* Ancho limitado */
+    font-size: 2rem; /* Tamaño del texto del título principal */
+    color: #0a0a0a; /* Color oscuro para el texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 40px auto 20px auto; /* Margen superior e inferior, centrado horizontalmente */
+    /*background: linear-gradient(135deg, #ffffff, #415f76); /* Fondo decorativo comentado */
+    padding: 20px 10px; /* Espaciado interno para mejorar el diseño */
+    border-radius: 15px; /* Bordes redondeados para el contenedor del título */
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave comentada */
+    width: 80%; /* Ancho limitado para centrar el contenido */
 }
 
-
-
+/* Estilo alternativo para el título (duplicado) */
 #experiencia-laboral h2 {
-    font-size: 1.5rem;
-    color: #5b5454;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 1.5rem; /* Tamaño del texto ajustado */
+    color: #5b5454; /* Color diferente para destacar el título */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 20px; /* Espaciado inferior */
 }
 
-/* Lista de experiencia */
+/* Estilo general para la lista de experiencia laboral */
 .experience-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style: none; /* Elimina los marcadores predeterminados de las listas */
+    padding: 0; /* Elimina el espaciado interno */
+    margin: 0; /* Elimina el margen externo */
 }
 
+/* Estilo individual para cada ítem de experiencia */
 .experience-item {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    background-color: #fff;
-    transition: box-shadow 0.3s ease;
-    background: rgba(255, 255, 255, 0.8)
-    
+    margin-bottom: 20px; /* Espaciado inferior entre elementos */
+    padding: 15px; /* Espaciado interno del ítem */
+    border: 1px solid #ddd; /* Borde sutil alrededor del ítem */
+    border-radius: 6px; /* Bordes redondeados para los ítems */
+    background-color: #fff; /* Fondo blanco */
+    transition: box-shadow 0.3s ease; /* Transición suave para el efecto hover */
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
 }
 
+/* Efecto hover para cada ítem de experiencia */
 .experience-item:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra suave al pasar el ratón */
 }
 
+/* Estilo del título de cada ítem de experiencia */
 .experience-item h3 {
-    font-size: 1.5rem;
-    color: #070707;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: #070707; /* Color oscuro para el texto */
+    margin-bottom: 10px; /* Espaciado inferior */
 }
 
+/* Listas dentro de los ítems de experiencia */
 .experience-item ul {
-    list-style: none;
-    padding: 10px 20px; 
-    margin: 0;
+    list-style: none; /* Elimina los marcadores predeterminados */
+    padding: 10px 20px; /* Espaciado interno de las listas */
+    margin: 0; /* Elimina el margen externo */
 }
 
+/* Estilo de los elementos individuales dentro de las listas */
 .experience-item ul li {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 5px;
+    font-size: 1rem; /* Tamaño del texto */
+    color: #555; /* Color gris para el texto */
+    margin-bottom: 5px; /* Espaciado inferior entre los elementos */
     text-align: justify; /* Justifica el texto */
     line-height: 1.5; /* Mejora el espaciado entre líneas */
-    padding-left: 10px; /* Añade espacio desde el margen izquierdo */
-    padding-right: 10px; /* Añade espacio desde el margen derecho */
+    padding-left: 10px; /* Espaciado desde el margen izquierdo */
+    padding-right: 10px; /* Espaciado desde el margen derecho */
 }
 
+/* Estilo para el texto destacado dentro de las listas */
 .experience-item ul li strong {
-    color: #333;
+    color: #333; /* Color más oscuro para resaltar el texto */
 }
+
 
 
 
@@ -360,4 +399,116 @@ body {
 
 
 /*------------------------- portafolio */
+
+/*------------------------- reporte */
+
+/*------------------------- contacto */
+
+/* ------------------------------------ Estilo General ------------------------------------ */
+/* Configuración general para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal para el contenido */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina padding predeterminado */
+    background-color: #f9f9f9; /* Color de fondo suave */
+    color: #333; /* Color del texto principal */
+}
+
+/* ------------------------------------ Sección de Contacto ------------------------------------ */
+/* Estilo general para el contenedor de la sección de contacto */
+.contact-section {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 40px auto; /* Centra horizontalmente y añade espaciado vertical */
+    padding: 20px; /* Espaciado interno */
+    background: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+}
+
+/* Estilo para el título de la sección de contacto */
+.contact-section h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    color: #007BFF; /* Color azul moderno */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 24px; /* Tamaño del texto del título */
+}
+
+/* ------------------------------------ Formulario ------------------------------------ */
+/* Contenedor general del formulario */
+form {
+    display: flex; /* Configura un diseño de caja flexible */
+    flex-direction: column; /* Coloca los elementos del formulario en una columna */
+    gap: 15px; /* Espaciado uniforme entre los campos */
+}
+
+/* Estilo para grupos de campos en el formulario */
+.form-group {
+    display: flex; /* Configura un diseño de caja flexible */
+    flex-direction: column; /* Coloca etiquetas y campos en una columna */
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+    font-weight: bold; /* Resalta el texto de las etiquetas */
+    margin-bottom: 5px; /* Espaciado inferior */
+    color: #555; /* Color secundario para las etiquetas */
+}
+
+/* Estilo para los campos de entrada y área de texto */
+input, textarea {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    transition: border-color 0.3s ease-in-out; /* Transición suave para el borde */
+}
+
+/* Estilo para campos activos (enfocados) */
+input:focus, textarea:focus {
+    outline: none; /* Elimina el contorno predeterminado */
+    border-color: #007BFF; /* Resalta el borde con un color azul */
+}
+
+/* Estilo para el área de texto */
+textarea {
+    resize: none; /* Desactiva el cambio de tamaño manual */
+}
+
+/* ------------------------------------ Botón de Enviar ------------------------------------ */
+/* Estilo general para el botón */
+button {
+    padding: 12px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    color: #fff; /* Texto blanco */
+    background-color: #007BFF; /* Color azul moderno */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s ease-in-out; /* Transición suave para el color de fondo */
+}
+
+/* Estilo para el botón al pasar el ratón */
+button:hover {
+    background-color: #0056b3; /* Cambia a un azul más oscuro al pasar el ratón */
+}
+
+/* ------------------------------------ Pie de Página ------------------------------------ */
+/* Estilo general para el pie de página */
+.footer {
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 20px 0; /* Espaciado interno superior e inferior */
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+    font-size: 14px; /* Tamaño del texto */
+    margin-top: 40px; /* Añade un margen superior */
+}
+
+/* Estilo para el texto del pie de página */
+.footer p {
+    margin: 0; /* Elimina márgenes predeterminados */
+}
+
+
+
 
