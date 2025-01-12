@@ -12,8 +12,8 @@ body {
 /* -----------------------Header-------------------------------------------------------- */
 /* Estilo general del encabezado */
 .header {
-    background: linear-gradient(135deg, #ffffff, #415f76); /* Fondo degradado para el encabezado */
-    color: #f9f0f0; /* Color del texto del encabezado */
+    background: linear-gradient(135deg, #ffffff, #73acd7); /* Fondo degradado para el encabezado */
+    color: #06090cbb; /* Color del texto del encabezado */
     padding: 2rem 0; /* Espaciado interno superior e inferior */
     position: relative; /* Permite posicionar elementos hijos con `absolute` */
     text-align: center; /* Centra el contenido del encabezado */
@@ -421,7 +421,7 @@ body {
     max-width: 600px; /* Ancho máximo del contenedor */
     margin: 40px auto; /* Centra horizontalmente y añade espaciado vertical */
     padding: 20px; /* Espaciado interno */
-    background: #fff; /* Fondo blanco */
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
 }
@@ -429,7 +429,7 @@ body {
 /* Estilo para el título de la sección de contacto */
 .contact-section h2 {
     text-align: center; /* Centra el texto horizontalmente */
-    color: #007BFF; /* Color azul moderno */
+    color: #000407; /* Color azul moderno */
     margin-bottom: 20px; /* Espaciado inferior */
     font-size: 24px; /* Tamaño del texto del título */
 }
@@ -481,7 +481,7 @@ button {
     padding: 12px 20px; /* Espaciado interno */
     font-size: 16px; /* Tamaño del texto */
     color: #fff; /* Texto blanco */
-    background-color: #007BFF; /* Color azul moderno */
+    background-color: #7a9dc5; /* Color azul moderno */
     border: none; /* Sin bordes */
     border-radius: 5px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor al pasar el ratón */
@@ -490,7 +490,7 @@ button {
 
 /* Estilo para el botón al pasar el ratón */
 button:hover {
-    background-color: #0056b3; /* Cambia a un azul más oscuro al pasar el ratón */
+    background-color: #769ecc; /* Cambia a un azul más oscuro al pasar el ratón */
 }
 
 /* ------------------------------------ Pie de Página ------------------------------------ */
