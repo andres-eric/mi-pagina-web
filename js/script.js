@@ -1,15 +1,26 @@
 // script.js
+
+// Espera a que el contenido del DOM esté completamente cargado
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Página cargada correctamente");
 
+    // -------------------- Año dinámico --------------------
+    const yearElement = document.getElementById("current-year"); // Selecciona el elemento del año
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear(); // Establece el año actual
+        console.log("Año actualizado correctamente");
+    } else {
+        console.error("No se encontró el elemento con ID 'current-year'");
+    }
+
+    // -------------------- Formulario --------------------
     const formulario = document.querySelector("#contact-form");
 
     if (formulario) {
         formulario.addEventListener("submit", (e) => {
-            e.preventDefault(); // Evita el comportamiento predeterminado de recarga
+            e.preventDefault();
             const formData = new FormData(formulario);
 
-            // Enviar datos con Formspree
             fetch(formulario.action, {
                 method: "POST",
                 body: formData,
@@ -20,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 .then((response) => {
                     if (response.ok) {
                         alert("Correo enviado con éxito. Gracias por contactarnos.");
-                        formulario.reset(); // Limpia el formulario después de enviarlo
+                        formulario.reset();
                     } else {
                         alert("Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.");
                     }
